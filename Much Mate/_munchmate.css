@@ -1,0 +1,419 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+nav {
+    margin-top: 5px;
+    height: 10vh;
+    display: flex;
+    width: 100vw;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    width: 200px;
+    height: 50px;
+    padding-left: 100px;
+}
+
+.right {
+    display: flex;
+    gap: 20px;
+    padding-right: 110px;
+    justify-content: center;
+    align-items: center;
+}
+
+.search {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    gap: 3px;
+    cursor: pointer;
+}
+
+.login-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3px;
+    padding: 7px 16px;
+    box-shadow: 1px 4px 9px 0px #ffb900c2;
+    border-radius: 6px;
+    border: 1px;
+    cursor: pointer;
+}
+
+.login-button:hover {
+    transform: translateY(-1px);
+    background-color: aliceblue;
+
+}
+
+.login-button:active {
+    transform: translateY(1px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* 2nd part after the nav */
+
+.second-part {
+    height: 70vh;
+    background-color: rgb(236, 198, 29);
+    display: flex;
+    background-image: url(ramen\ background.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right center;
+    width: 100vw;
+}
+
+
+.second-title {
+    color: white;
+    font-size: 70px;
+    margin-bottom: 11px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.second-para {
+    font-size: 17px;
+    margin-bottom: 18px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.second-div {
+    margin-top: 80px;
+    margin-left: 100px;
+    margin-bottom: 11px;
+}
+
+.details {
+    background-color: white;
+    width: 55vw;
+    min-height: 9vw;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.interdetails {
+    display: flex;
+    margin-bottom: 24px;
+}
+
+.same {
+    margin-left: 30px;
+    margin-top: 12px;
+    height: 4vh;
+    width: 7vw;
+    border-radius: 3px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.delivery {
+    color: rgb(255, 106, 0);
+    background-color: rgba(255, 167, 113, 0.53);
+    gap: 5px;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    font-size: 13px;
+    padding: 2px 4px;
+    font-weight: bold;
+}
+
+.delivery:hover {
+    background-color: rgb(255, 224, 169);
+}
+
+.pickup {
+    gap: 5px;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    font-size: 13px;
+}
+
+.pickup:hover {
+    background-color: aliceblue;
+}
+
+.location input {
+    height: 33px;
+    width: 37vw;
+    border-radius: 5px;
+    border: none;
+    background-color: rgb(220, 220, 220);
+    margin-left: 30px;
+}
+
+svg {
+    left: 147px;
+    top: 340px;
+}
+
+.find {
+    height: 50px;
+    width: 176px;
+    background-color: rgb(250, 123, 69);
+    border-radius: 5px;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: auto;
+    margin-left: auto;
+    gap: 3px;
+}
+
+.find:hover {
+    background-color: rgb(255, 153, 0);
+}
+
+.find:active {
+    transform: translate(-1px);
+    box-shadow: 1 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#find-food-text {
+
+    font-size: 16px;
+    font-weight: bolder;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+.location {
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* third part  */
+
+.gallery {
+    width: 600px;
+    height: 400px;
+    display: flex;
+    gap: 5px;
+    margin-right: 40vw;
+    margin-left: auto;
+    margin-bottom: 50px;
+}
+
+.gallery img {
+    position: relative;
+    width: 25%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 4px solid yellow;
+    transition: all ease 0.3s;
+    cursor: pointer;
+}
+
+.gallery img:hover {
+    width: 100%;
+    transform: translateX(-30%);
+}
+
+
+.Featured {
+    display: flex;
+    margin-left: 42.5vh;
+    font-size: 20px;
+    margin-top: 40px;
+    margin-bottom: 2%;
+    font-family: 'Poppins', sans-serif;
+    color: rgb(255, 115, 0);
+    gap: 15px;
+}
+
+.food-items {
+
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    margin-right: 18vw;
+    margin-left: 20vw;
+    gap: 15px;
+    font-family: 'Poppins', sans-serif;
+    color: rgb(250, 184, 62);
+    margin-bottom: 10px;
+}
+
+/* restaurants grid */
+.featured-restauants{
+    display: grid;
+    grid-template-columns: repeat(4, 280px); 
+    grid-template-rows: repeat(2, 220px);
+    justify-content: center;
+    gap: 40px;
+    margin: 0 15vw;
+    cursor: pointer;
+    margin-bottom: 80px;
+}
+
+.featured-restauants img{
+    width: 280px;
+    height: 170px;
+    border: 3px solid yellow;
+}
+
+.featured-restauants img:hover{
+    transform: scale(1.1);
+    transition: tranform 2s ease;
+}
+
+.featured-restauants p{
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    color: orange;
+}
+.featured-restauants p:hover{
+    color: rgb(173, 173, 55);
+}
+
+.featured2{
+    font-size: 18px;
+    margin-left: 9.5vw;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-family: 'Poppins', sans-serif;
+} 
+
+.about-us{
+    width: 100vw;
+    height: 25vw;
+    background-image: url(background\ shuchi.png);   
+    background-size: cover;
+    opacity: 0.8;
+    background-repeat: no-repeat;
+    text-align: center;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    margin-bottom: 40px;
+
+}
+
+.about-us *{
+    margin:0 20vw;
+    margin-top: 20px;
+}
+.about-us h2{
+    padding-top: 80px;
+}
+
+.learn{
+    margin-top: 34px;
+    justify-content: center;
+    padding: 7px 16px;
+    box-shadow: 1px 4px 9px 0px #ffb900c2;
+    border-radius: 5px;
+    border: 1px;
+    cursor: pointer;
+    width: 140px;
+    height: 35px;
+}
+
+.learn:hover {
+    transform: translateY(-1px);
+    background-color: aliceblue;
+
+}
+
+.learn:active {
+    transform: translateY(1px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* end part */
+footer {
+    width: 97.5vw;
+    background-color: #ffe606;
+    padding: 40px 20px;
+    color: grey;
+    font-family: Arial, sans-serif;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.footer-logo img {
+    width: 100px;
+    height: auto;
+}
+
+.footer-links ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.footer-links ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.footer-links ul li a {
+    text-decoration: none;
+    color: #333;
+    color: grey;
+}
+
+.footer-social a {
+    text-decoration: none;
+    color: #333;
+    margin-right: 10px;
+}
+
+.footer-info {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.contact-info h3, .newsletter h3 {
+    margin-bottom: 10px;
+}
+
+.contact-info p {
+    margin: 5px 0;
+}
+
+.newsletter input[type="email"] {
+    width: 200px;
+    padding: 8px;
+    margin-right: 10px;
+    border-radius: 10px;
+    border: none;
+}
+
+.newsletter button {
+    padding: 8px 20px;
+    background-color: orange;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 30px;
+}
